@@ -4,6 +4,8 @@ import * as Font from "expo-font";
 import AppLoading from "expo-app-loading";
 // import { AppLoading } from "expo"; --- check on this which one is best
 
+import Navigator from "./routes/homeStack"; // exported from homeStack which holds Home and ReviewDetails
+
 const getFonts = () => {
   return Font.loadAsync({
     "nunito-regular": require("./assets/fonts/Nunito-Regular.ttf"),
@@ -24,7 +26,7 @@ export default function App() {
     );
   }
 
-  return <Home />;
+  return <Navigator />;
 }
 
 // this can be done too looks cleaner tbh
