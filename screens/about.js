@@ -1,16 +1,11 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, Text } from "react-native";
+import { globalStyles } from "../styles/global";
 
 export default function About() {
   return (
-    <View style={styles.container}>
+    <View>
       <Text>ABOUT PAGE</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 10,
-  },
-});
